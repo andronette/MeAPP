@@ -1,0 +1,192 @@
+
+
+
+
+body{ background-image: url(sunset.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left:0;
+    width:250px;
+    height:100%;
+}
+.sidebar header{
+    font-size:28px;
+    color:white;
+    text-align: center;
+    line-height: 70px;
+ background-color:peachpuff; 
+ user-select: none;
+}
+.sidebar ul a{
+    display:block;
+    height:100%;
+    width:100%;
+    line-height: 65px;
+    font-size: 20px;
+    color:white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(225,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+    background-color:burlywood;
+}
+ul li:hover a{
+    padding-left: 50px;
+
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+
+.s-m{
+    margin: 310px auto;
+    justify-content:space-around;
+    display:flex;
+    max-width: 700px;
+}
+.s-m a{
+    text-decoration: none;
+    font-size: 28px;
+    width:60px;
+    height:60px;
+    text-align: center;
+    transition: 0.4s all;
+    line-height: 58px;
+    cursor:pointer;
+    border-radius: 50%;
+    background-color: pink;
+
+}
+.s-m a:hover{
+    transform: scale(1.2);
+}
+img{
+    width:400px;
+    height:400px;
+    margin:90px 610px;
+    float:center;
+    border-radius: 50%;
+    background-image: url(Andronette.jpg);
+    background-size: cover;
+}
+.login-page{
+    width: 360px;
+    padding:10% 0 0;
+    margin: auto;
+}
+
+.form{
+    position:relative;
+    z-index:1;
+    background:rgba(7 , 40 , 195 , 0.8);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding:45px;
+    text-align: center;
+}
+.form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background:#ffffff;
+    width:100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding:15px;
+    box-sizing:border-box;
+    font-size:14px;
+}
+
+.form button{
+    font-family: "Roboto" , sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border:0;
+    padding:15px;
+    color:#ffffff;
+    font-size: 14px;
+    cursor:pointer;
+}
+.form button:hover, .form button:active{
+    background: #43A047;
+}
+.form .message{
+    margin:15px 0 0;
+    color:aliceblue;
+    font-size:12px;
+}
+.form .message a{
+    color:#4CAF50;
+    text-decoration:none;
+}
+.form .register-form{
+    display: none;
+}
+.wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+.wrapper ul{
+    list-style:none;
+}
+.wrapper ul li{
+    width:75px;
+    height:75px;
+    line-height: 75px;
+    margin:0 10px;
+    cursor:pointer;
+    border-radius: 50%;
+    border:5px solid #fff;
+    float:left;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.wrapper ul li .fa{
+    color:#fff;
+    margin-top:20px;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover:nth-child(1){
+    border:5px solid #3b5998;
+    box-shadow: 0 0 15px  #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-facebook{
+    color: #3b5998;
+    text-shadow:0 0 15px  #3b5998;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover:nth-child(2){
+    border:5px solid #bc2a3d;
+    box-shadow: 0 0 15px   #bc2a3d;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-instagram{
+    text-shadow:0 0 15px   #bc2a3d;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover:nth-child(3){
+    border:5px solid #4dc247;
+    box-shadow: 0 0 15px   #4dc247;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-whatsapp{
+    text-shadow:0 0 15px   #4dc247;
+    transition: all 0.5s ease;
+}
